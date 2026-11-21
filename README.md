@@ -18,7 +18,11 @@ captions", "check my export for cut-off faces", "make me a whoosh sound".
 
 ## Connect your AI assistant
 
-The default install folder is `%LOCALAPPDATA%\Programs\Nhipo`. Change the path below if you installed Nhipo somewhere
+**Easiest:** in Nhipo, open the menu ☰ → **Connect an AI assistant (MCP)**, then click **Connect** next to Claude Desktop
+or Cursor. Nhipo adds itself to that app's MCP config (it keeps your other servers and saves a backup) and shows the
+command for Claude Code. Restart the assistant afterwards.
+
+**By hand:** the default install folder is `%LOCALAPPDATA%\Programs\Nhipo`. Change the path below if you installed Nhipo somewhere
 else.
 
 **Claude Code**
