@@ -22,6 +22,19 @@ captions", "dub this drama into English", "check my export for cut-off faces", "
 or Cursor. Nhipo adds itself to that app's MCP config (it keeps your other servers and saves a backup) and shows the
 command for Claude Code. Restart the assistant afterwards.
 
+**With npx** (Node.js 18+): the `nhipo-mcp` launcher finds your Nhipo install and starts its server. If Nhipo is not
+installed yet, the assistant gets a `nhipo_setup` tool that explains how to get it.
+
+```json
+{ "mcpServers": { "nhipo": { "command": "npx", "args": ["-y", "nhipo-mcp"] } } }
+```
+
+```powershell
+claude mcp add nhipo -s user -- npx -y nhipo-mcp
+```
+
+Set `NHIPO_EXE` to the full path of `Nhipo.exe` if you installed Nhipo in a custom folder.
+
 **By hand:** the default install folder is `%LOCALAPPDATA%\Programs\Nhipo`. Change the path below if you installed Nhipo somewhere
 else.
 
@@ -104,4 +117,5 @@ Claude Code bằng lệnh ở trên (`Nhipo.exe --mcp`). Tải Nhipo miễn phí
 
 ---
 
-This repository holds documentation only. Nhipo is free to download. © Nhipo.
+This repository holds the documentation and the small `nhipo-mcp` launcher (`bin/nhipo-mcp.js`, no dependencies). The
+MCP server itself ships inside the Nhipo app. Nhipo is free to download. © Nhipo.
