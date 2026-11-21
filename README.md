@@ -57,7 +57,11 @@ The server runs without a window. It works whether or not the Nhipo app is open.
 | `sfx_generate` | Text description → new sound effect (WAV) |
 | `story_build` | Animated storytelling video (AI-written story, on-device painter, voice-over) |
 | `review_video` | Watches a video and lists flaws (cut-off faces, captions over faces, frozen or flickering frames, blur…) with timestamps and fixes |
+| `list_videos` | Lists the videos in a folder, newest first, to pick sources |
 | `nhipo_status` | Version, your plan and its limits, folders the server may use, running jobs |
+
+**Prompts** (shown as `/` commands in Claude Desktop and Claude Code): `short_video` (folder → captioned short video →
+flaw check), `dub_video`, `animated_story`, `check_video`.
 
 Long jobs run one at a time in the background. A tool returns a `jobId` straight away, and your assistant follows up with
 `export_status` or `job_status`.
