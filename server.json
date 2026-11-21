@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ph92g/nhipo-mcp",
+  "description": "Local AI video editor for Windows: edit, dub and translate videos, make sound effects and animated stories.",
+  "repository": {
+    "url": "https://github.com/ph92g/nhipo-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "nhipo-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NHIPO_EXE",
+          "description": "Full path of Nhipo.exe, only if Nhipo is installed outside the default folder",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

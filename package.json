@@ -1,0 +1,42 @@
+{
+  "name": "nhipo-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Nhipo, the local AI video editor: edit, dub and translate videos, make sound effects and animated stories, and check videos for flaws on your PC. Launches the Nhipo app's built-in server (Nhipo.exe --mcp).",
+  "mcpName": "io.github.ph92g/nhipo-mcp",
+  "bin": {
+    "nhipo-mcp": "bin/nhipo-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "video-editing",
+    "ai-video-editor",
+    "dubbing",
+    "nhipo"
+  ],
+  "homepage": "https://github.com/ph92g/nhipo-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ph92g/nhipo-mcp.git"
+  },
+  "bugs": {
+    "url": "https://discord.gg/N2J3XP6puh"
+  },
+  "license": "UNLICENSED"
+}
