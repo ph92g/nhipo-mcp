@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ph92g/nhipo-mcp",
-  "description": "Local AI video editor for Windows: edit, dub and translate videos, make sound effects and animated stories.",
+  "description": "Local AI video editor for Windows: edit, dub and translate videos, make SFX and animated stories.",
   "repository": {
     "url": "https://github.com/ph92g/nhipo-mcp",
     "source": "github"
