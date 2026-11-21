@@ -3,7 +3,7 @@
 [Nhipo](https://discord.gg/N2J3XP6puh) is an AI video editor that runs **entirely on your computer**. Your footage is never
 uploaded. Nhipo ships with a built-in [Model Context Protocol](https://modelcontextprotocol.io) server, so Claude Code,
 Claude Desktop, Cursor and any other MCP client can drive it: "turn these clips into a 30-second vertical video with
-captions", "check my export for cut-off faces", "make me a whoosh sound".
+captions", "dub this drama into English", "check my export for cut-off faces", "make me a whoosh sound".
 
 - **Local:** the server talks over stdio only. It opens no network port and never posts anything online.
 - **Same engine as the app:** cuts, captions, music, framing, sound effects, animated stories and the video checker are
@@ -53,6 +53,7 @@ The server runs without a window. It works whether or not the Nhipo app is open.
 | `create_from_videos` | AI-edits a short video from 1–20 source clips (cuts, captions, music, framing; 9:16, 1:1 or 16:9) and exports an MP4 |
 | `export_status` | Progress and result of a video job: percent, step, time left, then the MP4 path, size and duration |
 | `job_status` / `job_cancel` | Status of any long job, or cancel it |
+| `dub_video` | Translates a video's speech into one of 12 languages and dubs it with new voices: keeps the background music, reads burned-in subtitles and covers them with translated ones |
 | `sfx_generate` | Text description → new sound effect (WAV) |
 | `story_build` | Animated storytelling video (AI-written story, on-device painter, voice-over) |
 | `review_video` | Watches a video and lists flaws (cut-off faces, captions over faces, frozen or flickering frames, blur…) with timestamps and fixes |
@@ -78,6 +79,8 @@ upgrades are in the [Nhipo Discord](https://discord.gg/N2J3XP6puh).
 ## Try it
 
 > Edit `C:\Users\me\Videos\trip\*.mp4` into a 30-second 9:16 video with captions, then check it for problems.
+
+> Dub `C:\Users\me\Downloads\drama-ep1.mp4` into English and cover the Chinese subtitles.
 
 > Make a short animated story about a cat who learns to surf, 9:16.
 
